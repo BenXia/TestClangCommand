@@ -7,3 +7,6 @@ clang main.o link.a -framework Foundation -whyload  // 链接 main.o 与 link.a
 ./a.out
 clang main.o link.a -framework Foundation -whyload -ObjC  // 链接 main.o 与 link.a，强制加载 cateogry 方法
 ./a.out
+
+
+打断点后使用 dis -fm 可以看汇编代码，查下堆栈情况
